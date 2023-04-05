@@ -2,10 +2,12 @@ import {OrbitControls, PerspectiveCamera, useGLTF} from "@react-three/drei";
 import gsap from "gsap"
 import {useEffect, useRef} from "react";
 
+
 export  default function Three() {
     const drone = useGLTF("./drone/scene.gltf")
-    const orbitControlsRef = useRef(null)
     const sphereRef = useRef(null)
+
+
     useEffect(() => {
             gsap.set(sphereRef.current.position, {
                 x: 0.5,
@@ -40,11 +42,11 @@ export  default function Three() {
 
     return (
         <>
-            <PerspectiveCamera makeDefault position={[0, 1, 5]}/>
-            <OrbitControls ref={orbitControlsRef}
+            <PerspectiveCamera makeDefault position={[0, 0, 8]}/>
+            <OrbitControls
                            enableZoom={false}
                            enableRotate={false}
-                           enablePan={true}
+                           enablePan={false}
             />
             <mesh ref={sphereRef} scale={0.3}>
                 <primitive  object={drone.scene} rotation={[0, 0, 0]}/>
