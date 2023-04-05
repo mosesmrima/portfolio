@@ -50,7 +50,7 @@ export default function Home() {
                     </Suspense>
                 </Canvas>
 
-            <div className={"hero  absolute top-0 right-0  w-screen p-4 flex sm:flex-row flex-col justify-center items-center sm:gap-8 gap-4"}>
+            <div className={"hero  absolute top-0 right-0  w-screen p-4 flex sm:flex-row flex-col justify-center items-center sm:gap-8 gap-1"}>
                 <div>
                     <div className={"z-1 relative sm:text-3xl text-xl text-green-900 max-w-[900px] w-[450px]  text-center p-8 rounded-lg min-h-[350px] m-4"}>
                        <h1 id={"hello"} className={"sm:text-4xl text-3xl sm:px-1 px-2 opacity-0 text-[#F0F0F0]"}>Moses Mrima</h1>
