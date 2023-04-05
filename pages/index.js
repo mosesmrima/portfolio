@@ -42,17 +42,15 @@ export default function Home() {
 
     }, [])
     return (
-        <div className={""}>
+        <div className={"relative"}>
 
                 <Canvas shadows >
                     <Suspense fallback={null}>
                         <Three/>
                     </Suspense>
                 </Canvas>
-            <div className={"bg-red-200 w-[250px] h-[50px]  fixed top-0 right-0 z-30"}>
-                hello
-            </div>
-            <div className={"hero h-screen absolute top-0 left-0 w-full p-4 flex sm:flex-row flex-col justify-center items-center sm:gap-8 gap-4"}>
+
+            <div className={"hero  absolute top-0 right-0  w-screen p-4 flex sm:flex-row flex-col justify-center items-center sm:gap-8 gap-4"}>
                 <div>
                     <div className={"z-1 relative sm:text-3xl text-xl text-green-900 max-w-[900px] w-[450px]  text-center p-8 rounded-lg min-h-[350px] m-4"}>
                        <h1 id={"hello"} className={"sm:text-4xl text-3xl sm:px-1 px-2 opacity-0 text-[#F0F0F0]"}>Moses Mrima</h1>
@@ -60,12 +58,9 @@ export default function Home() {
                         <h1 id={"hello3"} className={"opacity-0 sm:px-1, px-3"}>Software Engineer</h1>
                     </div>
                 </div>
-                <div className={"max-w-[200px] z-100"}>
+                <div className={"max-w-[200px]"}>
                     <Image id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
                 </div>
-            </div>
-            <div className={"min-h-screen"}>
-                hello
             </div>
 
         </div>

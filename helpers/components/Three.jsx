@@ -46,8 +46,8 @@ export  default function Three() {
                            enableRotate={false}
                            enablePan={true}
             />
-            <mesh ref={sphereRef} >
-                <primitive scale={0.3} object={drone.scene} rotation={[0, 0, 0]}/>
+            <mesh ref={sphereRef} scale={0.3}>
+                <primitive  object={drone.scene} rotation={[0, 0, 0]}/>
             </mesh>
 
             <ambientLight args={["blue", 0.15]}/>
