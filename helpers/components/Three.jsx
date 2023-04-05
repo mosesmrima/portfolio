@@ -25,11 +25,12 @@ export  default function Three() {
             function handleMouseMove(e) {
                 const screenWidth = window.innerWidth
                 const screenHeight = window.innerHeight
+                console.log(window.innerWidth)
                 const mouseNdcX = (e.clientX / screenWidth) * 2 - 1
                 const mouseNdcY = (e.clientY / screenHeight) * -2 + 1
                 const clampedNdcX = Math.max(-1, Math.min(mouseNdcX, 1));
                 const clampedNdcY = Math.max(-1, Math.min(mouseNdcY, 1));
-                xTo(clampedNdcX>0?clampedNdcX*5:clampedNdcX*5.5);
+                xTo(clampedNdcX>0?clampedNdcX*(screenWidth<850?1:5):clampedNdcX*(screenWidth<850?1:5.5));
                 yTo(clampedNdcY>0?clampedNdcY * 2.2: clampedNdcY*2.7);
             }
 
