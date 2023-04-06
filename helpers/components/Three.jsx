@@ -51,12 +51,10 @@ export  default function Three() {
                 setRot(gsap.getProperty(proxy, "rotation"));
             }
             gsap.to(proxy, {
-                duration: 6,
-                delay: 2,
+                duration: 15,
                 repeat: -1,
-                yoyo: true,
                 motionPath: {
-                    path: [{x: 0, y: 0}, {x: 1, y: 1}, {x: 1.2, y: 1.3}, {x: 1.3, y: 1.4},{x: 1.5, y: 1.6}],
+                    path: [{x: 0, y: -2}, {x: 1, y: 1}, {x: 1.2, y: 1.3}, {x: 1.3, y: 1.4},{x: 1.5, y: 1.6}, {x: 1.2, y: 1.6}, {x: 0.9, y: 1.7}, {x: 0.2, y: 2}],
                 },
                 onUpdate: updateMesh
             })
@@ -76,7 +74,7 @@ export  default function Three() {
                            enableRotate={false}
                            enablePan={false}
             />
-            <mesh ref={sphereRef} scale={0.5} >
+            <mesh ref={sphereRef} scale={0.3} >
                 <primitive  object={drone.scene} rotation={[0, 0, 0]}/>
             </mesh>
 
