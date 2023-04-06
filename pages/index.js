@@ -15,7 +15,7 @@ export default function Home() {
         })
         tl.to(".char", {
             y: 0,
-            x: -70,
+            x: -50,
             stagger: 0.05,
             delay: 2.5,
             duration: 1.5
@@ -25,13 +25,13 @@ export default function Home() {
         })
         tl.to("#hello2", {
             opacity: 1,
-            x: 0,
+            x: 20,
             ease: "power1",
             duration: 1
         }, ">")
         tl.to("#hello3", {
             opacity: 1,
-            x: 90,
+            x: -90,
             duration: 1
         }, ">")
         gsap.to("#me", {
@@ -52,8 +52,8 @@ export default function Home() {
 
             <div className={"hero  absolute top-0 right-0  w-screen p-4 flex sm:flex-row flex-col justify-center items-center sm:gap-8 gap-1"}>
                 <div>
-                    <div className={"z-1 relative sm:text-3xl text-xl text-green-900 max-w-[900px] w-[450px]  text-center p-8 rounded-lg min-h-[350px] m-4"}>
-                       <h1 id={"hello"} className={"sm:text-4xl text-3xl sm:px-1 px-2 opacity-0 text-[#F0F0F0]"}>Moses Mrima</h1>
+                    <div className={"mx-auto z-1 relative sm:text-3xl text-xl text-green-900 max-w-[900px] w-[450px]  text-center sm:p-4 p-12 rounded-lg min-h-[350px] m-4"}>
+                       <h1 id={"hello"} className={"font-extrabold sm:text-5xl text-3xl sm:px-1 px-2 opacity-0 text-[#F0F0F0]"}>Moses Mrima</h1>
                         <h1 id={"hello2"} className={"opacity-0"}>Security Researcher</h1>
                         <h1 id={"hello3"} className={"opacity-0 sm:px-1, px-3"}>Software Engineer</h1>
                     </div>

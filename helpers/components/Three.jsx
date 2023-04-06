@@ -70,7 +70,7 @@ export  default function Three() {
 
     return (
         <>
-            <PerspectiveCamera makeDefault position={[0, 0, 8]}/>
+            <PerspectiveCamera makeDefault position={[-1, 0, 8]}/>
             <OrbitControls
                            enableZoom={false}
                            enableRotate={false}
