@@ -23,7 +23,7 @@ export default function Hero() {
             y: 0,
             x: -0,
             stagger: 0.05,
-            delay: 2.5,
+            delay: 2,
             duration: 1.5
         })
         gsap.set("#hello2", {
@@ -62,11 +62,11 @@ export default function Hero() {
                             <h1 id={"hello3"} className={"opacity-0 sm:px-1, px-3 text-transparent bg-clip-text bg-gradient-to-tr from-white to-neutral-600"}>Software Engineer</h1>
                         </div>
                     </div>
-                    <div className={"flex gap-6 justify-be"}>
-                        <div className={"sm:max-w-[250px] max-w-[200px]"}>
+                    <div className={"flex gap-6 justify-between"}>
+                        <div className={"sm:max-w-[250px] min-w-[150px] max-w-[200px]"}>
                             <Image id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
                         </div>
-                        <div className={" flex flex-col sm:flex-row justify-center items-center gap-4"}>
+                        <div className={" flex flex-col lg:flex-row justify-center items-center gap-4"}>
                             <svg width="0" height="0">
                                 <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
                                     <stop stopColor="white" offset="0%" />
