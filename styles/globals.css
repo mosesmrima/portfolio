@@ -45,6 +45,7 @@ body {
   background-image: linear-gradient(to top left, #ffffff, #4b5563);
 }
 .char {
+  color: transparent;
   transform: translateY(115px);
   transition: transfoorm 0.5s;
 }
