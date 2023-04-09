@@ -53,7 +53,7 @@ export default function Hero() {
 
     }, [])
     return (
-            <div className={"hero  absolute top-0 right-0  w-screen p-4 flex flex-col justify-center items-center"}>
+            <div className={"hero  absolute top-0 right-0  w-screen p-4 flex flex-col justify-between items-center"}>
                 <div className={"flex sm:flex-row flex-col justify-center items-center sm:gap-8 gap-1 p-1"}>
                     <div>
                         <div className={`${roboto.className} mx-auto z-1 relative sm:text-3xl text-xl text-[#F0F0F0] max-w-[900px] min-w-[450px]  text-center sm:p-4 p-12 rounded-lg min-h-[350px] m-4`}>
@@ -62,11 +62,13 @@ export default function Hero() {
                             <h1 id={"hello3"} className={"opacity-0 sm:px-1, px-3 text-transparent bg-clip-text bg-gradient-to-tr from-white to-neutral-600"}>Software Engineer</h1>
                         </div>
                     </div>
-                    <div className={"sm:max-w-[250px] max-w-[200px]"}>
-                        <Image id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
+                    <div>
+                        <div className={"sm:max-w-[250px] max-w-[200px]"}>
+                            <Image id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
+                        </div>
                     </div>
                 </div>
-                <div className={"absolute bottom-5 left-6/12 flex justify-center items-center gap-4"}>
+                <div className={" flex  justify-center items-center gap-4"}>
                     <svg width="0" height="0">
                         <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
                             <stop stopColor="white" offset="0%" />
@@ -74,13 +76,13 @@ export default function Hero() {
                         </linearGradient>
                     </svg>
                     <Link href={"https://www.linkedin.com/in/mrima/"}>
-                        <SlSocialLinkedin className={"mb-[8px] opacity-80 hover:opacity-100 cursor-pointer"} style={{ fill: "url(#blue-gradient)" }} size={30}/>
+                        <SlSocialLinkedin className={"mb-[8px] opacity-80 hover:opacity-100 cursor-pointer"} style={{ fill: "url(#blue-gradient)" }} size={28}/>
                     </Link>
                     <Link href={"https://github.com/mosesmrima"}>
-                        <TbBrandGithub className={"opacity-80 hover:opacity-100 cursor-pointer"} style={{ stroke: "url(#blue-gradient)" }} size={30}/>
+                        <TbBrandGithub className={"opacity-80 hover:opacity-100 cursor-pointer"} style={{ stroke: "url(#blue-gradient)" }} size={28}/>
                     </Link>
                     <Link href={"https://twitter.com/kvltbyte"}>
-                        <FiTwitter className={"opacity-80 hover:opacity-100 cursor-pointer"} style={{ stroke: "url(#blue-gradient)" }} size={30}/>
+                        <FiTwitter className={"opacity-80 hover:opacity-100 cursor-pointer"} style={{ stroke: "url(#blue-gradient)" }} size={28}/>
                     </Link>
                 </div>
             </div>
