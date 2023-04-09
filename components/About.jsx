@@ -16,7 +16,7 @@ export default function About () {
             text: {
                 value: "Hello, Im Mrima, a software engineer by day and I track ransomware gangs and reverse engineer malware by night",
             },
-            duration: 10,
+            duration: 5,
             delay: 0.5,
             scrollTrigger: {
                 trigger: ".hello",
@@ -26,7 +26,7 @@ export default function About () {
     }, [])
     return (
         <div className={"about p-8 flex flex-col justify-center items-center"}>
-            <h1 className={"text-white bg-red-100 justify-self-start"} >About Me</h1>
+            <h1 className={"text-white justify-self-start"} >About Me</h1>
             <div className={"flex justify-center items-center"}>
                 <div className={"hello max-w-[350px] bg-blue-400 h-auto"}>
                     01 01 01 00 10 10 10 01 01 01 01 00 10 01 01 01 01 00 10 10 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
