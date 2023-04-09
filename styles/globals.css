@@ -40,12 +40,12 @@ body {
 }
 
 #hello {
+
+}
+.char {
+  transform: translateY(115px);
+  transition: transfoorm 0.5s;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to top left, #ffffff, #4b5563);
-}
-.char {
-  color: transparent;
-  transform: translateY(115px);
-  transition: transfoorm 0.5s;
 }
