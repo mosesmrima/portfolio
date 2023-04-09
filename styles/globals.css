@@ -15,7 +15,7 @@
 
 .hero {
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
 }
 
 
@@ -25,13 +25,11 @@ body {
   overflow-x: hidden;
 }
 
-canvas {
+.about{
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
   background-image: radial-gradient(circle farthest-side at 70% 45%, #11131c, #030304, #0a0b11);
-  background-size: 100% 100%;
-  background-position: left center;
-  background-repeat: no-repeat;
+
 }
 
 #hello {
@@ -41,7 +39,7 @@ canvas {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-#id {
+#hello {
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to top left, #ffffff, #4b5563);
@@ -50,12 +48,3 @@ canvas {
   transform: translateY(115px);
   transition: transfoorm 0.5s;
 }
-/*
-
-
-
-
-
-
-
-*/
