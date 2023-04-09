@@ -57,7 +57,7 @@ export default function Hero() {
                 <div className={"flex sm:flex-row flex-col justify-center items-center sm:gap-8 gap-1 p-1"}>
                     <div>
                         <div className={`${roboto.className} mx-auto z-1 relative sm:text-3xl text-xl text-[#F0F0F0] max-w-[900px] min-w-[450px]  text-center sm:p-4 p-12 rounded-lg min-h-[350px] m-4`}>
-                            <h1 id={"hello"} className={"font-extrabold sm:text-5xl text-3xl sm:px-1 px-2 opacity-0 text-transparent bg-clip-text bg-gradient-to-tl from-white  to-neutral-500"}>Moses Mrima</h1>
+                            <h1 id={"hello"} className={"font-extrabold sm:text-5xl text-4xl sm:px-1 px-2 opacity-0 text-transparent bg-clip-text bg-gradient-to-tl from-white  to-neutral-500"}>Moses Mrima</h1>
                             <h1 id={"hello2"} className={"opacity-0 text-transparent bg-clip-text bg-gradient-to-br from-neutral-600  to-white"}>Security Researcher</h1>
                             <h1 id={"hello3"} className={"opacity-0 sm:px-1, px-3 text-transparent bg-clip-text bg-gradient-to-tr from-white to-neutral-600"}>Software Engineer</h1>
                         </div>
