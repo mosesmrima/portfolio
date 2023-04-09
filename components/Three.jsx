@@ -23,12 +23,12 @@ export  default function Three() {
         let setZ = gsap.quickSetter(sphereRef.current.position, "z");
         let setRot = gsap.quickSetter(sphereRef.current.position, "z");
         let xTo = gsap.quickTo(sphereRef.current.position, "x", {
-            duration: 0.6,
-            ease: "power3",
+            duration: 0.8,
+            ease: "power1.out",
         });
         let yTo = gsap.quickTo(sphereRef.current.position, "y", {
-            duration: 0.6,
-            ease: "power.inOut",
+            duration: 1,
+            ease: "power1.out",
         });
         window.addEventListener("resize", handleResize)
         function handleMouseMove(e) {
@@ -53,8 +53,9 @@ export  default function Three() {
             gsap.to(proxy, {
                 duration: 15,
                 repeat: -1,
+                repeatDelay: 2,
                 motionPath: {
-                    path: [{x: 0, y: -2}, {x: 1, y: 1}, {x: 1.2, y: 1.3}, {x: 1.3, y: 1.4},{x: 1.5, y: 1.6}, {x: 1.2, y: 1.6}, {x: 0.9, y: 1.7}, {x: 0.2, y: 2}],
+                    path: [{x: -2, y: -2}, {x: 1, y: 1}, {x: 1.2, y: 1.3}, {x: 1.3, y: 1.4},{x: 1.5, y: 1.6}, {x: 1.2, y: 1.6}, {x: 0.9, y: 1.7}, {x: - 2, y: 2}],
                 },
                 onUpdate: updateMesh
             })
