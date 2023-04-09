@@ -28,7 +28,7 @@ export default function About () {
         <div className={"about p-8 flex flex-col justify-center items-center"}>
             <h1 className={"text-white justify-self-start"} >About Me</h1>
             <div className={"flex justify-center items-center"}>
-                <div className={"hello max-w-[350px] bg-blue-400 h-auto"}>
+                <div className={"hello max-w-[350px] h-auto bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg"}>
                     01 01 01 00 10 10 10 01 01 01 01 00 10 01 01 01 01 00 10 10 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
                 </div>
             </div>
