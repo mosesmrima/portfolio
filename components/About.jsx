@@ -27,7 +27,7 @@ export default function About () {
     }, [])
     return (
         <div className={"about h-screen flex justify-center items-center"}>
-            <div className={"max-w-[350px] bg-blue-400 h-auto"}>
+            <div className={"hello max-w-[350px] bg-blue-400 h-auto"}>
                 01 01 01 00 10 10 10 01 01 01 01 00 10 01 01 01 01 00 10 10 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
             </div>
         </div>
