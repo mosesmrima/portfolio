@@ -49,3 +49,10 @@ body {
   background-clip: text;
   background-image: linear-gradient(to top left, #ffffff, #4b5563);
 }
+
+.about-text {
+  background-image: radial-gradient(circle farthest-side at 70% 45%, #11131c, #030304, #0a0b11);
+  background-size: 100% 100%;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
