@@ -79,8 +79,8 @@ export  default function Three() {
                 <primitive  object={drone.scene} rotation={[0, 0, 0]}/>
             </mesh>
 
-            <ambientLight args={["blue", 0.15]}/>
-            <spotLight angle={0.5} args={["red", 1]} position={[-3, 7, 0]} castShadow={true}/>
+            <ambientLight args={["#2b354f", 0.75]}/>
+            <spotLight angle={0.5} args={["#4b5563", 1]} position={[-2, 6, 0]} castShadow={true}/>
         </>
     )
 }
