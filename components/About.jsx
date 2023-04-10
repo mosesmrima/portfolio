@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import {TextPlugin} from  "gsap/dist/TextPlugin"
 import {useEffect} from "react"
 import {Roboto} from "next/font/google";
-import Pc from "@/components/Pc";
 
 const roboto = Roboto({weight: "900", subsets: ["latin"],  variable: '--font-inter', preload: false})
 gsap.registerPlugin(ScrollTrigger);
@@ -39,9 +38,6 @@ export default function About () {
                      </div>
                  </div>
              </div>
-                <div className={"sm:h-[450px] h-[300px] w-[400px] sm:w-[700px]"}>
-                    <Pc/>
-                </div>
             </div>
         </div>
     )
