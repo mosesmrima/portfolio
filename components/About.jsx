@@ -4,7 +4,7 @@ import {TextPlugin} from  "gsap/dist/TextPlugin"
 import {useEffect} from "react"
 import {Roboto} from "next/font/google";
 
-const roboto = Roboto({weight: "900", subsets: ["latin"],  variable: '--font-inter'})
+const roboto = Roboto({weight: "900", subsets: ["latin"],  variable: '--font-inter', preload: false})
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin)
 
