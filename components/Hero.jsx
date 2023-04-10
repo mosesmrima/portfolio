@@ -9,7 +9,7 @@ import {TbBrandGithub} from "react-icons/tb"
 import {SlSocialLinkedin} from "react-icons/sl"
 import Link from "next/link";
 
-const roboto = Roboto({weight: "900", subsets: ["latin"], variable: "--font-inter"})
+const roboto = Roboto({weight: "900", subsets: ["latin"], variable: "--font-inter", preload: false})
 
 export default function Hero() {
     useEffect(()=> {
@@ -64,7 +64,7 @@ export default function Hero() {
                     </div>
                     <div className={"flex gap-6 justify-between"}>
                         <div className={"sm:max-w-[250px] min-w-[150px] max-w-[200px]"}>
-                            <Image id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
+                            <Image priority={true} id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
                         </div>
                         <div className={" flex flex-col lg:flex-row justify-center items-center gap-4"}>
                             <svg width="0" height="0">
