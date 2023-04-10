@@ -46,7 +46,7 @@ export default function Hero() {
             duration: 1,
         }, ">")
         gsap.to("#me", {
-            opacity: 1,
+            opacity: 0.5,
             duration: 10,
             delay: 2
         })
@@ -64,7 +64,7 @@ export default function Hero() {
                     </div>
                     <div className={"flex gap-6 justify-between"}>
                         <div className={"sm:max-w-[250px] min-w-[150px] max-w-[200px]"}>
-                            <Image priority={true} id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
+                            <Image placeholder={"blur"} priority={true} id={"me"} alt={""} src={me} className={"rounded-full drop-shadow-lg opacity-0"}/>
                         </div>
                         <div className={" flex flex-col lg:flex-row justify-center items-center gap-4"}>
                             <svg width="0" height="0">
