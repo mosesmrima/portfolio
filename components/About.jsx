@@ -16,7 +16,7 @@ export default function About () {
             text: {
                 value: "Hello, Im Mrima, a software engineer by day and I track ransomware gangs and reverse engineer malware by night",
             },
-            duration: 52,
+            duration: 4,
             delay: 0.5,
             scrollTrigger: {
                 trigger: ".hello",
