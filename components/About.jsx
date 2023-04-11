@@ -29,7 +29,7 @@ export default function About () {
     }, [])
     return (
         <div className={"about p-8"}>
-            <h1 className={`${pressStart2P.variable} font-serif sm:text-4xl text-3xl text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500 text-center w-full mx-auto p-4`} >$whomai</h1>
+            <h2 className={`${pressStart2P.variable} font-serif sm:text-4xl text-3xl text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500 text-center w-full mx-auto p-4`} >$whomai</h2>
             <div className={"flex justify-around items-center p-8 md:flex-row flex-col"}>
              <div className={"bg-gradient-to-tl from-white to-neutral-500 rounded-2xl p-0.5"}>
                  <div className={"about-text rounded-2xl"}>
