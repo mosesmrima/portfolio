@@ -69,7 +69,7 @@ export default function About () {
                      </div>
                  </div>
              </div>
-                <div className="sm:w-6/12 w-full flex justify-center items-center gap-6">
+                <div className="sm:w-6/12 w-full flex justify-center items-center sm:gap-6 gap-2">
                     <div className="expander relative w-[60px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black p-8">
                         <h1 className={`${pressStart2P.variable}  heading absolute rotate-90 left-0 top-[50%]`}>Security Researcher</h1>
                         <p className={`${roboto.variable} content opacity-0`}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
