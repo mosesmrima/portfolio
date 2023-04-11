@@ -41,7 +41,7 @@ export default function Hero() {
         }, ">")
         tl.to("#hello3", {
             opacity: 1,
-            x: 75,
+            x: 70,
             scale: 1,
             duration: 1,
         }, ">")
@@ -58,8 +58,8 @@ export default function Hero() {
                     <div>
                         <div className={`${pressStart2P.variable} font-serif mx-auto z-1 relative sm:text-3xl text-xl text-[#F0F0F0] max-w-[900px] min-w-[450px]  text-center sm:p-4 p-12 rounded-lg min-h-[350px] m-4`}>
                             <h1 id={"hello"} className={"sm:text-4xl text-2xl sm:px-1 px-2 opacity-0 text-transparent bg-clip-text bg-gradient-to-tl from-white  to-neutral-500"}>Moses Mrima</h1>
-                            <h1 id={"hello2"} className={"sm:text-lg text-base opacity-0 text-transparent bg-clip-text bg-gradient-to-br from-neutral-600  to-white"}>Cyber Security Researcher</h1>
-                            <h1 id={"hello3"} className={"sm:text-lg text-base opacity-0 sm:px-1, px-3 text-transparent bg-clip-text bg-gradient-to-tr from-white to-neutral-600"}>Software Engineer</h1>
+                            <h1 id={"hello2"} className={"sm:text-lg text-sm opacity-0 text-transparent bg-clip-text bg-gradient-to-br from-neutral-600  to-white"}>Security Researcher</h1>
+                            <h1 id={"hello3"} className={"sm:text-lg text-sm opacity-0 sm:px-1, px-3 text-transparent bg-clip-text bg-gradient-to-tr from-white to-neutral-600"}>Software Engineer</h1>
                         </div>
                     </div>
                     <div className={"flex gap-6 justify-between"}>
