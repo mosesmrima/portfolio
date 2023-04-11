@@ -34,7 +34,7 @@ export default function About () {
              <div className={"bg-gradient-to-tl from-white to-neutral-500 rounded-2xl p-0.5"}>
                  <div className={"about-text rounded-2xl"}>
                      <div className={"bg-white bg-opacity-5 backdrop-blur-lg max-w-[450px] min-w-[300px] rounded-2xl p-4 flex justify-center items-center"}>
-                         <p className={`hello ${roboto.variable} font-sans text-base text-transparent bg-clip-text bg-gradient-to-tl from-white to-teal-200`}>
+                         <p className={`hello ${roboto.variable} font-sans text-base text-transparent bg-clip-text bg-gradient-to-tl from-neutral-400 to-white`}>
                              0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10 01010101 1010101010101 101 10101010 010101010101 1010 01010101 10 01010
                          </p>
                      </div>
