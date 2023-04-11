@@ -21,7 +21,7 @@ export default function About () {
             let heading = expander.querySelector(".heading")
             //create animation for each expander
             let animation = gsap.timeline({paused:true})
-            animation.to(expander, {width:350, duration:0.4})
+            animation.to(expander, {minWidth: 350, duration:0.4})
             animation.to(heading, {rotation: 360, top: 5, left: 50})
             animation.to(content, {opacity: 1, duration: 0.5})
             //apply the timeline animation to an animation property on the expander
