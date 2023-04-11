@@ -35,13 +35,13 @@ export default function Hero() {
         })
         tl.to("#hello2", {
             opacity: 1,
-            x: 30,
+            x: 3,
             ease: "power1",
             duration: 1
         }, ">")
         tl.to("#hello3", {
             opacity: 1,
-            x: 70,
+            x: 5,
             scale: 1,
             duration: 1,
         }, ">")
