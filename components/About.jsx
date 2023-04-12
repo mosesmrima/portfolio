@@ -21,7 +21,7 @@ export default function About () {
             let heading = expander.querySelector(".heading")
             //create animation for each expander
             let animation = gsap.timeline({paused:true})
-            animation.to(expander, {width: 350, duration:0.4})
+            animation.to(expander, {maxHeight:500, width: 350, duration:0.4})
             animation.to(heading, {rotation: 360, top: 5, left: 50})
             animation.to(content, {opacity: 1, duration: 0.5})
             //apply the timeline animation to an animation property on the expander
@@ -70,12 +70,12 @@ export default function About () {
                  </div>
              </div>
                 <div className="sm:w-6/12 w-screen flex justify-center items-center sm:gap-6 gap-2">
-                    <div className="expander relative sm:w-[60px] w-[35px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black p-8">
-                        <h1 className={`${pressStart2P.variable}  heading absolute rotate-90 left-0 top-[50%]`}>Security Researcher</h1>
-                        <p className={`${roboto.variable} content opacity-0`}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
+                    <div className="expander relative sm:w-[60px] w-[45px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center">
+                        <h1 className={`${pressStart2P.variable} bg-red-800 align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-10 -left-10 top-[50%]`}>Software Engineer</h1>
+                        <p className={`${roboto.variable} content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
-                    <div className="expander relative sm:w-[60px] w-[45px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black">
-                        <h1 className={`${pressStart2P.variable} align-bottom whitespace-nowrap rotate-90 heading absolute  sm:left-0 -left-10 top-[50%]`}>Software Engineer</h1>
+                    <div className="expander relative sm:w-[60px] w-[45px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center sm:p-6 p-4">
+                        <h1 className={`${pressStart2P.variable} bg-red-800 align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-10 -left-10 top-[50%]`}>Software Engineer</h1>
                         <p className={`${roboto.variable} content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
                 </div>
