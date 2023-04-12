@@ -75,7 +75,7 @@ export default function About () {
                         <p className={`${roboto.variable} content opacity-0`}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
                     <div className="expander relative sm:w-[60px] w-[45px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black">
-                        <h1 className={`${pressStart2P.variable} bg-green-900 align-baseline whitespace-nowrap rotate-90 heading absolute  sm:left-0 left-[-20%] top-[50%]`}>Software Engineer</h1>
+                        <h1 className={`${pressStart2P.variable} align-bottom whitespace-nowrap rotate-90 heading absolute  sm:left-0 -left-10 top-[50%]`}>Software Engineer</h1>
                         <p className={`${roboto.variable} content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
                 </div>
