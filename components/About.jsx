@@ -59,7 +59,7 @@ export default function About () {
     return (
         <div className={"about p-8"}>
             <h2 className={`${pressStart2P.variable} font-serif sm:text-4xl text-3xl text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500 text-center w-full mx-auto p-4`} >$whomai</h2>
-            <div className={"flex justify-around items-center p-8 md:flex-row flex-col bg-green-400"}>
+            <div className={"flex justify-around items-center p-8 md:flex-row flex-col"}>
              <div className={"bg-gradient-to-tl from-white to-neutral-500 rounded-2xl p-0.5"}>
                  <div className={"about-text rounded-2xl"}>
                      <div className={"bg-white bg-opacity-5 backdrop-blur-lg max-w-[450px] min-w-[300px] rounded-2xl p-4 flex justify-center items-center"}>
@@ -69,13 +69,13 @@ export default function About () {
                      </div>
                  </div>
              </div>
-                <div className="sm:w-6/12 w-full flex justify-center items-center sm:gap-6 gap-2">
-                    <div className="expander relative w-[60px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black p-8">
+                <div className="sm:w-6/12 w-screen flex justify-center items-center sm:gap-6 gap-2">
+                    <div className="expander relative sm:w-[60px] w-[35px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black p-8">
                         <h1 className={`${pressStart2P.variable}  heading absolute rotate-90 left-0 top-[50%]`}>Security Researcher</h1>
                         <p className={`${roboto.variable} content opacity-0`}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
-                    <div className="expander relative w-[60px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black p-8">
-                        <h1 className={`${pressStart2P.variable}  heading absolute rotate-90 left-0 top-[50%]`}>Software Engineer</h1>
+                    <div className="expander relative sm:w-[60px] w-[45px] min-h-[350px]  max-h-[350px] rounded-3xl overflow-hidden bg-black">
+                        <h1 className={`${pressStart2P.variable} bg-green-900 align-baseline whitespace-nowrap rotate-90 heading absolute  sm:left-0 left-[-20%] top-[50%]`}>Software Engineer</h1>
                         <p className={`${roboto.variable} content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
                 </div>
