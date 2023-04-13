@@ -117,7 +117,7 @@ export default function About () {
                 </div>
             </div>
             <div className={"flex flex-col justify-center items-center"}>
-                <h3 className={`${pressStart2P.variable} font-serif text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Languages & Other Skills</h3>
+                <h3 className={`${pressStart2P.variable} font-serif text-center text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Languages & Other Skills</h3>
                 <div className={"flex gap-4 p-4"}>
                     <SiC style={{ fill: "url(#blue-gradient)" }} size={28}/>
                     <TbBrandJavascript style={{ stroke: "url(#blue-gradient)" }} size={29}/>
