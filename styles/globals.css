@@ -26,7 +26,6 @@ body {
 }
 
 .about{
-  min-height: 100vh;
   width: 100vw;
   background-image: radial-gradient(circle farthest-side at 70% 45%, #11131c, #030304, #0a0b11);
   background-size: 100% 100%;

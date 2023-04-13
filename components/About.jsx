@@ -43,7 +43,6 @@ export default function About () {
 // access the world's larest collection of premium GreenSock tutorials
 
 
-        gsap.set(".expander", {backgroundColor:gsap.utils.wrap(["#f5ce5b", "#c570b6", "#78d6e0"])})
         gsap.to(".hello", {
             text: {
                 value: "I am a cyber security researcher and software engineer. With a passion for both fields, I have been continually developing my skills in reverse engineering malware and performing threat intelligence, including tracking ransomware gangs. As a software engineer, I specialize in building user-friendly and scalable applications with security in mind.",
@@ -70,12 +69,12 @@ export default function About () {
                  </div>
              </div>
                 <div className="hover:cursor-pointer sm:w-6/12 w-[95vw] flex justify-center items-center sm:gap-6 gap-2">
-                    <div className="expander relative sm:w-[60px] w-[45px] min-h-[350px] h-auto   max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center p-2">
-                        <h1 className={`bg-red-900 ${pressStart2P.variable} font-serif text-xs align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-16 -left-20 top-[50%]`}>Software Engineer</h1>
+                    <div className="expander bg-neutral-300 bg-opacity-20 relative sm:w-[60px] w-[45px] min-h-[350px] h-auto   max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center p-2">
+                        <h1 className={`bg-red-900 ${pressStart2P.variable} font-serif text-xs align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-16 -left-20 top-[50%] text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Security Researcher</h1>
                         <p className={`${roboto.variable} font-sans content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
-                    <div className="expander relative sm:w-[60px] w-[45px] min-h-[350px] h-auto  max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center p-2">
-                        <h1 className={`bg-red-900 ${pressStart2P.variable} font-serif text-xs  align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-16 -left-20 top-[50%]`}>Software Engineer</h1>
+                    <div className="expander bg-neutral-300 bg-opacity-20 relative sm:w-[60px] w-[45px] min-h-[350px] h-auto   max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center p-2">
+                        <h1 className={`bg-red-900 ${pressStart2P.variable} font-serif text-xs align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-16 -left-20 top-[50%] text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Security Researcher</h1>
                         <p className={`${roboto.variable} font-sans content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
                     </div>
                 </div>
