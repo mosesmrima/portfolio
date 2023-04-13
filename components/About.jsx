@@ -3,6 +3,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import {TextPlugin} from  "gsap/dist/TextPlugin"
 import {useEffect} from "react"
 import {Press_Start_2P, Roboto} from "next/font/google";
+import {SiC, SiGnubash, SiLinux, SiPuppet} from "react-icons/si"
+import {TbBrandJavascript, TbBrandPython} from "react-icons/tb"
+import {FaGitSquare} from "react-icons/fa"
 
 const roboto = Roboto({weight: "900", subsets: ["latin"],  variable: '--font-roboto', preload: false})
 const pressStart2P = Press_Start_2P({weight: "400", subsets:["latin"], variable: "--font-press", preload: false})
@@ -71,12 +74,58 @@ export default function About () {
                 <div className="hover:cursor-pointer sm:w-6/12 w-[95vw] flex justify-center items-center sm:gap-6 gap-2">
                     <div className="expander bg-neutral-300 bg-opacity-20 border border-zinc-300 relative sm:w-[60px] w-[45px] min-h-[350px] h-auto   max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center p-2">
                         <h1 className={`${pressStart2P.variable} font-serif text-xs align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-20 -left-24 top-[50%] text-transparent bg-clip-text bg-gradient-to-tl from-neutral-100 to-neutral-300`}>Security Researcher</h1>
-                        <p className={`${roboto.variable} font-sans content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
+                        <div className={`${roboto.variable} font-sans content opacity-0 flex flex-col justify-between items-center gap-6`}>
+                            <h4>Skills</h4>
+                            <ul className={"list-disc"}>
+                                <li>Reverse Engineering</li>
+                                <li>Malware Analysis</li>
+                                <li>Threat Intel & Hunting</li>
+                                <li>Network Analysis</li>
+                                <li>Digital Forensics</li>
+                            </ul>
+                            <button type="button" className="text-black bg-gradient-to-r from-zinc-500 via-zinc-600 to-zinc-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-zinc-300 shadow-lg shadow-zinc-500/50 dark:shadow-lg dark:shadow-zinc-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Resume</button>
+                        </div>
                     </div>
                     <div className="expander bg-neutral-300 bg-opacity-20 border border-zinc-300 relative sm:w-[60px] w-[45px] min-h-[350px] h-auto   max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center p-2">
-                        <h1 className={`${pressStart2P.variable} font-serif text-xs align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-20 -left-24 top-[50%] text-transparent bg-clip-text bg-gradient-to-tl from-neutral-100 to-neutral-300`}>Security Researcher</h1>
-                        <p className={`${roboto.variable} font-sans content opacity-0 `}>0 01 1 1010101010101 1010101010 010 01010101 101010101 1010 0 0101010 010 0101 1010101 1 1010 0101 10101010101 1010101010 01 101010 01 1010101 10101010101 1010101 101 1010101010 010101 1010101010101 101010101 10101010 0101010101 101010 01 1 10101010 010101010 0 0101010101 10</p>
+                        <h1 className={`${pressStart2P.variable} font-serif text-xs align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-20 -left-24 top-[50%] text-transparent bg-clip-text bg-gradient-to-tl from-neutral-100 to-neutral-300`}>Software Engineer</h1>
+                        <div className={`${roboto.variable} font-sans content opacity-0 flex flex-col justify-between items-center gap-6`}>
+                            <div className={"flex justify-between items-start gap-8"}>
+                                <div className={"flex flex-col"}>
+                                    <h4>Frontend</h4>
+                                    <ul className={"list-disc"}>
+                                        <li>React</li>
+                                        <li>Nextjs</li>
+                                        <li>Tailwindcss</li>
+                                        <li>Ant Design</li>
+                                        <li>Threejs</li>
+                                    </ul>
+                                </div>
+                                <div className={"flex flex-col"}>
+                                    <h4>Backend</h4>
+                                    <ul className={"list-disc"}>
+                                        <li>Node</li>
+                                        <li>Expressjs</li>
+                                        <li>MongoDB</li>
+                                        <li>MySQL</li>
+                                        <li>REST APIs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" className="text-black bg-gradient-to-r from-zinc-500 via-zinc-600 to-zinc-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-zinc-300 shadow-lg shadow-zinc-500/50 dark:shadow-lg dark:shadow-zinc-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Resume</button>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div className={"flex flex-col justify-center items-center"}>
+                <h3 className={`${pressStart2P.variable} font-serif text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Languages & Other Skills</h3>
+                <div className={"flex gap-4 p-4"}>
+                    <SiC style={{ fill: "url(#blue-gradient)" }} size={28}/>
+                    <TbBrandJavascript style={{ stroke: "url(#blue-gradient)" }} size={29}/>
+                    <TbBrandPython style={{ stroke: "url(#blue-gradient)" }} size={29}/>
+                    <SiGnubash style={{ fill: "url(#blue-gradient)" }} size={28}/>
+                    <SiLinux style={{ fill: "url(#blue-gradient)" }} size={28}/>
+                    <FaGitSquare style={{ fill: "url(#blue-gradient)" }} size={28}/>
+                    <SiPuppet style={{ fill: "url(#blue-gradient)" }} size={28}/>
                 </div>
             </div>
         </div>
