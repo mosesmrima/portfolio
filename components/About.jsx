@@ -14,6 +14,15 @@ export default function About () {
 
     useEffect(()=>{
 
+        const animation1 = gsap.timeline({paused: true})
+        animation1.to(".expander", {
+            scale: 1.08,
+            repeat: -1,
+            duration: 1,
+            yoyo: true,
+            stagger: 0.8
+        })
+        animation1.play()
         let expanders = gsap.utils.toArray(".expander")
         let active
         expanders.forEach(function(expander){
@@ -29,9 +38,11 @@ export default function About () {
                 if(active) {
                     //close the active expander if there is one by reversing it
                     active.animation.reverse()
+                    animation1.paused()
                 }
                 expander.animation.play() // play the animation of the element you clicked on (this opens it)
                 active = expander // keep track of which expander is open
+                animation1.paused()
             })
 
         })
