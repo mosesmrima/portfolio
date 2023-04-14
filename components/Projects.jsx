@@ -8,9 +8,18 @@ import kentronix from "/public/kentronix.png"
 import mifuse from "/public/mifuse.png"
 import Link from "next/link";
 import {AiOutlineMail} from "react-icons/ai"
-
+import gsap from "gsap"
+import {useEffect} from "react";
 export default function Projects() {
-
+    useEffect(() => {
+        gsap.to(".email-icon", {
+            rotate: -45,
+            repeat: -1,
+            scale: 1.5,
+            duration: 1,
+            yoyo: true
+        })
+    }, [])
     return (
         <div className={`projects p-8 flex flex-col justify-center items-center`}>
             <h2 className={`${pressStart2P.variable} font-serif sm:text-3xl text-2xl text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500 text-center w-full mx-auto p-8`} >portfolio</h2>
@@ -83,8 +92,8 @@ export default function Projects() {
             <div className={"mt-8"}>
                 <h2 className={`${pressStart2P.variable} font-serif sm:text-2xl text-xl text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500 text-center w-full mx-auto p-4`} >Contact Me</h2>
                 <div className={"flex gap-6 justify-center items-center"}>
-                    <AiOutlineMail className={"-rotate-45"} style={{ fill: "url(#blue-gradient)" }} size={38}/>
-                    <p className={`${roboto.variable} font-sans text-base text-transparent bg-clip-text bg-gradient-to-tl from-neutral-400 to-white`}>mrimamss@gmail.com</p>
+                    <AiOutlineMail className={"email-icon"} style={{ fill: "url(#blue-gradient)" }} size={38}/>
+                    <p className={`${roboto.variable} font-sans text-lg text-transparent bg-clip-text bg-gradient-to-tl from-neutral-400 to-white`}>mrimamss@gmail.com</p>
                 </div>
             </div>
         </div>
