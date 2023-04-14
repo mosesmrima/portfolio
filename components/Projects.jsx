@@ -38,7 +38,7 @@ export default function Projects() {
                     </div>
 
                     <div className="flex flex-col h-full items-center justify-center items center bg-zinc-300 bg-opacity-10 rounded-2l border border-zinc-500 w-full p-4">
-                        <h2 className={`${pressStart2P.variable} font-serif sm:text-xl text-lg text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Jackal</h2>
+                        <h2 className={`${pressStart2P.variable} font-serif sm:text-xl text-lg text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>HackA</h2>
                         <div className={"w-11/12 h-full flex sm:flex-row flex-col gap-4 justify-center items-center"}>
                             <div>
                                 <Image src={hackA} alt={"hackA"} className={"rounded-xl"}/>
