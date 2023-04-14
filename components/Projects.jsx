@@ -17,6 +17,7 @@ export default function Projects() {
                     <div className="flex h-full items-center justify-center bg-red-400 w-full">
                         Slide 3
                     </div>
+
                 </Carousel>
             </div>
         </div>
