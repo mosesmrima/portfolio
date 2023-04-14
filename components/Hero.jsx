@@ -3,13 +3,11 @@ import me from "@/public/me.jpeg";
 import {useEffect} from "react";
 import SplitType from "split-type";
 import gsap from "gsap";
-import {Press_Start_2P} from "next/font/google"
 import {FiTwitter} from "react-icons/fi"
 import {TbBrandGithub} from "react-icons/tb"
 import {SlSocialLinkedin} from "react-icons/sl"
 import Link from "next/link";
-
-const pressStart2P = Press_Start_2P({weight: "400", subsets:["latin"], variable: "--font-press", preload: false})
+import {pressStart2P} from "@/pages";
 
 export default function Hero() {
     useEffect(()=> {
