@@ -3,7 +3,10 @@ import {Suspense} from "react";
 import Three from "@/components/Three";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-
+import Projects from "@/components/Projects";
+import {Press_Start_2P, Roboto} from "next/font/google";
+export const roboto = Roboto({weight: "900", subsets: ["latin"],  variable: '--font-roboto', preload: false})
+export const pressStart2P = Press_Start_2P({weight: "400", subsets:["latin"], variable: "--font-press", preload: false})
 
 export default function Home() {
 
@@ -18,6 +21,7 @@ export default function Home() {
              <Hero/>
          </div>
         <About/>
+         <Projects/>
      </>
     )
 }
