@@ -15,16 +15,15 @@ export default function About () {
     useEffect(()=>{
 
         let expanders = gsap.utils.toArray(".expander")
-        let active // keep track of which expander is open
+        let active
         expanders.forEach(function(expander){
             let content = expander.querySelector(".content")
             let heading = expander.querySelector(".heading")
-            //create animation for each expander
             let animation = gsap.timeline({paused:true})
             animation.to(expander, { width: 350, duration:0.4})
             animation.to(heading, {rotation: 360, top: 10, left: 50})
             animation.to(content, {opacity: 1, duration: 0.5})
-            //apply the timeline animation to an animation property on the expander
+
             expander.animation = animation
             expander.addEventListener("click", function() {
                 if(active) {
@@ -34,15 +33,8 @@ export default function About () {
                 expander.animation.play() // play the animation of the element you clicked on (this opens it)
                 active = expander // keep track of which expander is open
             })
-            //close this expander when you click the close button by reversing the animation
 
         })
-
-// learn all my GreenSock tricks at
-// http://www.creativeCodingClub.com
-// access the world's larest collection of premium GreenSock tutorials
-
-
         gsap.to(".hello", {
             text: {
                 value: "I am a cyber security researcher and software engineer. With a passion for both fields, I have been continually developing my skills in reverse engineering malware and performing threat intelligence, including tracking ransomware gangs. As a software engineer, I specialize in building user-friendly and scalable applications with security in mind.",
@@ -69,6 +61,7 @@ export default function About () {
                  </div>
              </div>
                 <div className="hover:cursor-pointer sm:w-6/12 w-[95vw] flex justify-center items-center sm:gap-6 gap-2">
+
                     <div className="expander bg-neutral-300 bg-opacity-20 border border-zinc-300 relative sm:w-[60px] w-[45px] min-h-[350px] h-auto   max-h-[350px] rounded-3xl overflow-hidden flex justify-center items-center p-2">
                         <h1 className={`${pressStart2P.variable} font-serif text-xs align-bottom whitespace-nowrap rotate-90 heading absolute  sm:-left-20 -left-24 top-[50%] text-transparent bg-clip-text bg-gradient-to-tl from-neutral-100 to-neutral-300`}>Security Researcher</h1>
                         <div className={`${roboto.variable} font-sans content opacity-0 flex flex-col justify-between items-center gap-6`}>
