@@ -21,7 +21,7 @@ export default function Hero() {
             y: 0,
             x: -0,
             stagger: 0.05,
-            delay: 2,
+            delay: 1.5,
             duration: 1.5
         })
         gsap.set("#hello2", {
@@ -35,18 +35,18 @@ export default function Hero() {
             opacity: 1,
             x: 3,
             ease: "power1",
-            duration: 1
+            duration: 0.8
         }, ">")
         tl.to("#hello3", {
             opacity: 1,
             x: 5,
             scale: 1,
-            duration: 1,
+            duration: 0.8,
         }, ">")
         gsap.to("#me", {
             opacity: 0.5,
-            duration: 10,
-            delay: 2
+            duration: 6,
+            delay: 1.5
         })
 
     }, [])
