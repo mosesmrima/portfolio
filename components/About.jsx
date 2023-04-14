@@ -2,13 +2,10 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import {TextPlugin} from  "gsap/dist/TextPlugin"
 import {useEffect} from "react"
-import {Press_Start_2P, Roboto} from "next/font/google";
 import {SiC, SiGnubash, SiLinux, SiPuppet} from "react-icons/si"
 import {TbBrandJavascript, TbBrandPython} from "react-icons/tb"
 import {FaGitSquare} from "react-icons/fa"
-
-const roboto = Roboto({weight: "900", subsets: ["latin"],  variable: '--font-roboto', preload: false})
-const pressStart2P = Press_Start_2P({weight: "400", subsets:["latin"], variable: "--font-press", preload: false})
+import {pressStart2P, roboto} from "@/pages"
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin)
@@ -116,7 +113,7 @@ export default function About () {
                     </div>
                 </div>
             </div>
-            <div className={"flex flex-col justify-center items-center"}>
+            <div className={"flex flex-col justify-center items-center mt-6"}>
                 <h3 className={`${pressStart2P.variable} font-serif text-center text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Languages & Other Skills</h3>
                 <div className={"flex gap-4 p-4"}>
                     <SiC style={{ fill: "url(#blue-gradient)" }} size={28}/>
