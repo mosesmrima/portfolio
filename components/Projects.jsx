@@ -21,7 +21,7 @@ export default function Projects() {
         })
     }, [])
     return (
-        <div className={`projects p-8 flex flex-col justify-center items-center`}>
+        <div className={`projects p-8 flex flex-col justify-center items-center snap-start`}>
             <h2 className={`${pressStart2P.variable} font-serif sm:text-3xl text-2xl text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500 text-center w-full mx-auto p-8`} >portfolio</h2>
             <div className="h-[350px] sm:h-64 xl:h-80 2xl:h-96 sm:w-[75vw] w-[90vw] max-w-[800px]">
                 <Carousel indicators={false} className={"sm:w-[75vw] w-[90vw] max-w-[800px]"} slideInterval={6000}  leftControl={<FiArrowLeftCircle size={30} style={{ stroke: "url(#blue-gradient)" }}/>} rightControl={<FiArrowRightCircle size={30} style={{ stroke: "url(#blue-gradient)" }}/>} >
@@ -29,7 +29,7 @@ export default function Projects() {
                         <h2 className={`${pressStart2P.variable} font-serif sm:text-xl text-lg text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Vigil</h2>
                         <div className={"w-11/12 h-full flex sm:flex-row flex-col gap-4 justify-center items-center"}>
                             <div>
-                                <Image src={vigil} alt={"vigil"} className={"rounded-xl"}/>
+                                <Image priority={true} src={vigil} alt={"vigil"} className={"rounded-xl"}/>
                             </div>
                             <p className={`${roboto.variable} font-sans text-base text-transparent bg-clip-text bg-gradient-to-tl from-neutral-400 to-white text-center`}>
                                 A cyber threat intelligence dashboard and API to track significant cyber security incidents.
@@ -41,7 +41,7 @@ export default function Projects() {
                         <h2 className={`${pressStart2P.variable} font-serif sm:text-xl text-lg text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>HackA</h2>
                         <div className={"w-11/12 h-full flex sm:flex-row flex-col gap-4 justify-center items-center"}>
                             <div>
-                                <Image src={hackA} alt={"hackA"} className={"rounded-xl"}/>
+                                <Image priority={true} src={hackA} alt={"hackA"} className={"rounded-xl"}/>
                             </div>
                             <div className={"flex flex-col justify-between items-center"}>
                                 <p className={`${roboto.variable} font-sans text-base text-transparent bg-clip-text bg-gradient-to-tl from-neutral-400 to-white text-center`}>
@@ -58,7 +58,7 @@ export default function Projects() {
                         <h2 className={`${pressStart2P.variable} font-serif sm:text-xl text-lg text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>Kentronix</h2>
                         <div className={"w-11/12 h-full flex sm:flex-row flex-col gap-4 justify-center items-center"}>
                             <div className={"sm:w-[50%]"}>
-                                <Image src={kentronix} alt={"kentronix"} className={"rounded-xl"}/>
+                                <Image priority={true} src={kentronix} alt={"kentronix"} className={"rounded-xl"}/>
                             </div>
                             <div className={"flex flex-col justify-between items-center"}>
                                 <p className={`${roboto.variable} font-sans text-base text-transparent bg-clip-text bg-gradient-to-tl from-neutral-400 to-white text-center`}>
@@ -75,7 +75,7 @@ export default function Projects() {
                         <h2 className={`${pressStart2P.variable} font-serif sm:text-xl text-lg text-transparent bg-clip-text bg-gradient-to-tl from-white to-neutral-500`}>MiFUSE</h2>
                         <div className={"w-11/12 h-full flex sm:flex-row flex-col gap-4 justify-center items-center"}>
                             <div>
-                                <Image src={mifuse} alt={"fuse"} className={"rounded-xl"}/>
+                                <Image priority={true} src={mifuse} alt={"fuse"} className={"rounded-xl"}/>
                             </div>
                             <div className={"flex flex-col justify-between items-center"}>
                                 <p className={`${roboto.variable} font-sans text-base text-transparent bg-clip-text bg-gradient-to-tl from-neutral-400 to-white text-center`}>
